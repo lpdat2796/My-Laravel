@@ -1,0 +1,35 @@
+$path-img: '../images';
+// Lấy địa chỉ hình ảnh bao gồm width ,height ( thường xuyên sử dụng)
+@mixin get_images_full($img , $disp: block) {
+   background-image: url('#{$path-img}/#{$img}');
+   background-repeat: no-repeat;
+   width:image-width('#{$img}');
+   height:image-height('#{$img}');
+   display: $disp;
+}
+// Lấy địa chỉ hình ảnh truyền tham số width ,height theo ý muốn . 
+@mixin get_images_option($img, $w, $h, $disp: block) {
+	background-image: url('#{$path-img}/#{$img}');
+	background-repeat: no-repeat;
+	width: $w;
+	height: $h;
+	display: $disp;
+}
+@mixin easy-image-height($img, $w, $h, $disp: block)
+{
+	.image($w,$h){
+	  width: $w;
+	  overflow: hidden;
+	  height: $h;
+	  text-align: center;
+	  .image-wrapper{
+	    left: 100%;
+	    margin-left: -200%;
+	    position: relative;
+	    img{
+	      width: auto;
+	      height:$h;
+	    }
+	  }
+	}
+}

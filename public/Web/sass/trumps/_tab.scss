@@ -1,0 +1,56 @@
+ul.t-tab {
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    li {
+        float: left;
+        margin: 0 5px 0 0;
+        position: relative;
+        &:last-child {
+            margin: 0;
+        }
+
+        %active {
+            background: #cd3520;
+            border: solid 1px #f64803;
+            color: #ffe400;
+        }
+
+        a {
+            padding: 0 30px;
+            @include mq(screen-sm) {
+                padding: 0 10px;
+            }
+            background: #871609;
+            height: 40px;
+            line-height: 40px;
+            display: block;
+            color: #feb7ae;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            border: solid 1px #c42714;
+            text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.7);
+            border-radius: 0;
+            &:focus,
+            &:hover {
+                @extend %active;
+            }
+        }
+    }
+    li.active {
+        a,
+        a:hover,
+        a:focus {
+            @extend %active;
+
+        }
+        &:before {
+            content: '';
+            @include position(absolute, null 0 -5px calc((100% - 12px)/2));
+            @include triangle(12px, #cd3520, down);
+            z-index: 10;
+        }
+    }
+}

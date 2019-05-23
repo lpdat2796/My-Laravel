@@ -1,0 +1,40 @@
+// %att {
+//     color: #972619;
+//     font-size: 15px;
+//     font-weight: bold;
+//     line-height: 30px;
+//     height: 30px;
+//     padding: 0px 10px;
+//     margin-right: 10px;
+//     border: solid 1px #972619;
+//     background: #260d11;
+// }
+// .t-pagination {
+//     margin: 10px auto 10px;
+//     li {
+//         a,
+//         span {
+//             @extend %att;
+//             &:hover,
+//             &:focus{
+//                 color: #382508;
+//                 border: solid 1px #ffba00;
+//                 background: #ffba00;
+//             }
+//         }
+//     }
+//     .active {
+//         float: left;
+//         @extend %att;
+//         color: #382508;
+//         border: solid 1px #ffba00;
+//         background: #ffba00;
+//     }
+
+//     .glyphicon {
+//         font-family: 'Glyphicons Halflings';
+//         @extend %att;
+//         color: #972619;
+//         margin-top: -1px;
+//     }
+// }

@@ -1,0 +1,488 @@
+/* General */
+.StaticMain {
+	margin: 0 0 20px;
+	padding: 0 30px 0 30px;
+	clear: both;
+    text-align: justify;
+    h3 {
+		color: $h3-color;
+		font-size: 3em;
+        font-weight: bold;
+		text-align: center;
+		margin: 0 0 30px 0;
+	}
+	a {
+		color: $content-link-color;
+		text-decoration: underline;
+		&:hover {
+			color: $content-link-hover-color;
+			text-decoration: none;
+		}
+	}
+
+	p {
+		margin: 0 0 10px;
+	}
+
+	ul {
+		list-style: disc;
+		padding: 0 0 0 0;
+		li {
+			list-style: disc;
+			padding: 0 0 0 0px;
+			margin: 0 0 5px 20px;
+			ul {
+				list-style: circle;
+				padding: 0 0 10px 0;
+			}
+		}
+	}
+	ol {
+		margin: 0 0 20px;
+		padding: 0 0 0 20px;
+		li {
+			margin: 0 0 10px;
+			list-style: decimal !important;
+		}
+	}
+
+    .AnchorLink {
+        margin: 0px 30px 20px;
+        overflow: hidden;
+        list-style: none outside none;
+
+        li {
+            float: left;
+            width: 24%;
+            padding: 0 0 5px 0px;
+			margin: 0 1% 0 0;
+			list-style: none;
+			@include mq(screen-md) {
+				width: 31%;
+				margin-right: 2%;
+			}
+			@include mq(screen-sm) {
+				width: 48%;
+				margin-right: 2%;
+			}
+			@include mq(screen-xs) {
+				width: 98%;
+				margin-right: 2%;
+			}
+
+            a {
+                text-decoration: none;
+                padding-left:20px;
+                font-weight: bold;
+                position: relative;
+				color:$content-link-anchor-color;
+                @include p-el(before,9px,9px){
+	                 @extend %pseudos;
+	                 top:5px;
+	                 left:5px;
+	                 background-color: $bg-icons-anchor ;
+	                 @include transform(rotate(45deg));
+	            }
+
+            }
+            a.Active,
+            a.Active:hover,
+            a:hover {
+                color: $main-link-hover-color;
+                @include p-el(before,9px,9px){
+                    background-color:$bg-icons-anchor-active;
+                    @extend %pseudos;
+                    top: 5px;
+                    left:5px;
+                    @include transform(rotate(45deg));
+                 }
+            }
+        }
+    }
+
+    .FirstChar {
+        padding: 4px 4px 0 0;
+        line-height: 30px;
+        font-size: 42px;
+        font-weight: bold;
+        float: left;
+        color: $first-letter-color;
+    }
+
+    .ContentBlock {
+        padding-bottom: 20px;
+        clear: both;
+    }
+
+    .ImagesBlock {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+	.ImgCenter {
+		text-align: center !important;
+		margin-bottom: 20px !important;
+        font-size: 90%;
+        font-style: italic;
+	}
+
+
+
+	h4 {
+		color: $h4-color;
+		padding: 5px 0 5px $h4-padding;
+		font-size: 20px;
+		font-weight: bold;
+		margin: 0 0 5px 0px;
+        position: relative;
+        @include p-el(before){
+            @include icons-sprite(h4);
+            @extend %pseudos;
+            top:-5px;
+            left:-5px;
+        }
+	}
+	.ContentH4 {
+		clear: both;
+		margin: 0 0 10px $h4-padding;
+		padding: 0 0 0 0px;
+		p {
+			margin-bottom: 10px;
+			/*text-align: justify;*/
+
+		}
+	}
+    .ImagesH4 {
+        text-align: center;
+        margin: 0 0 20px $h4-padding;
+    }
+
+
+	h5 {
+		color: $h5-color;
+		padding: 0 0 0 $h5-padding;
+		margin: 0 0 10px $h4-padding;
+		font-size: 18px;
+		font-weight: bold;
+		position: relative;
+        @include p-el(before){
+            @include icons-sprite(h5);
+            @extend %pseudos;
+            top:5px;
+            left:3px;
+        }
+	}
+
+	.ContentH5 {
+		clear: both;
+		margin: 0 0 0 ($h4-padding+$h5-padding);
+		@include mq-to(max-width,480px){
+			margin-left: 40px;
+		}
+		padding:0 0 20px;
+
+		p {
+			margin-bottom: 10px;
+			text-align: justify;
+
+		}
+	}
+    .ImagesH5 {
+        text-align: center;
+        margin: 0 0 20px $h5-padding;
+    }
+
+
+    table {
+		border-top: solid 1px $table-border-color;
+		margin: 0 auto 20px;
+		border-collapse: collapse;
+		text-align: center;
+		thead {
+			tr {
+				th {
+					color: $table-head-text-color;
+					background: $table-head-background-color;
+					font-weight: bolder;
+					padding: 5px 10px;
+					border-right: 1px solid $table-border-color;
+					border-left: 1px solid $table-border-color;
+					border-bottom: 1px solid $table-border-color;
+					text-align: center;
+				}
+			}
+		}
+		tbody {
+			tr{
+				&:nth-child(odd) {
+					background-color: $table-background-row-1-color;
+				}
+				&:nth-child(even) {
+					background-color: $table-background-row-2-color;
+				}
+				td {
+					padding: 3px 5px;
+					border: 1px solid $table-border-color;
+					border-top: none;
+                    color: $table-text-color;
+                    a {
+                        color: $table-text-color;
+                        &:hover {
+                            color: $table-text-hover-color;
+                        }
+                    }
+				}
+			}
+
+		}
+	}
+
+	table.Notice  {
+		border: 1px solid $table-border-color;
+		tr {
+			td  {
+				padding: 10px 20px;
+				border: 1px solid $table-border-color;
+				p  {
+					margin-bottom: 10px;
+				}
+				ul,
+				ol {
+					padding-bottom: 0px;
+					margin-bottom: 0px;
+				}
+			}
+		}
+
+
+	}
+
+	/* Text styles */
+	.TextCenter {
+		text-align: center;
+	}
+	.TextRight {
+		text-align: right;
+	}
+	.Strong01 {
+		font-weight: bolder;
+		color: $strong-1-color;
+	}
+	.Strong02 {
+		font-weight: bolder;
+		color: $strong-2-color;
+	}
+	.Strong03 {
+		font-weight: bolder;
+		color: $strong-3-color;
+	}
+	.TextFont17 {
+		font-size: 17px;
+
+	}
+	.TextFont19 {
+		font-size: 19px;
+
+	}
+	.TextFont21 {
+		font-size: 21px;
+
+	}
+	/* END. Text styles */
+
+	/* Image styles */
+	.NoBorderImg {
+		border: none;
+		background: none;
+		padding: 0;
+	}
+	.BorderImg {
+		background: $image-background-color;
+		border: 1px solid $image-border-color;
+		padding: 0px;
+		margin-bottom:5px;
+	}
+	.ImgLeft {
+		float: left;
+		margin: 1px 10px 5px 0;
+		border: 1px solid $image-border-color;
+	}
+	.ImgRight {
+		float: right;
+		margin: 0 0 5px 10px;
+		border: 1px solid $image-border-color;
+	}
+
+
+	blockquote {
+		border-left: 2px solid $table-border-color;
+		font-size: 14px;
+		margin: 0 20px;
+		padding: 10px 40px;
+		margin: 0;
+		position: relative;
+		font-style: italic;
+		&:before,
+		&:after {
+			position: absolute;
+			display: block;
+			width: 20px;
+			height: 20px;
+			background-image: image-url('content/quote.png');
+			content: '';
+		}
+
+		&:before {
+			top: 0;
+			left: 10px;
+			background-position: 0 0;
+		}
+		&:after {
+			right: 0;
+			bottom: 0;
+			background-position: -20px 0;
+		}
+
+
+	}
+
+    /* Notice box */
+    .NoticeBox {
+        border: solid 1px $notice-border-color;
+        padding: 10px;
+        background: $notice-background-color;
+        .Legend {
+            font-size: 13px;
+            font-weight: bolder;
+            padding: 0 15px;
+            color: $notice-legend-color;
+            background: $notice-legend-background-color;
+            height: 28px;
+            margin: -20px 0 10px;
+            float: left;
+			line-height: 28px;
+            border: solid 1px $legend-border-color;
+        }
+        .NoteContent {
+            width: 100%;
+            overflow: hidden;
+            text-align: justify;
+            color: $notice-color;
+            a{
+				@if $notice-link-color != nưll {
+					color: $notice-link-color;
+				}
+
+                &:hover {
+					@if $notice-link-hover-color != nưll {
+						color: $notice-link-hover-color;
+					}
+                }
+            }
+
+        }
+    }
+
+    /* List styles */
+    ul.Decimal {
+        margin: 0px 0px 10px 0px;
+        li {
+            list-style-type: decimal;
+            margin-bottom: 10px;
+            text-align: justify;
+             color: $color-list-danhmuc;
+            ul {
+                padding-top: 5px;
+            }
+        }
+    }
+
+    ul.UpperAlpha {
+        margin: 0px 0px 10px 0px;
+        li {
+            list-style-type: upper-alpha;
+            margin-bottom: 10px;
+            text-align: justify;
+            color: $color-list-danhmuc;
+            ul {
+                padding-top: 5px;
+            }
+        }
+    }
+
+    ul.LowerAlpha {
+        margin: 0px 0px 10px 0px;
+        li {
+            list-style-type: lower-alpha;
+            margin-bottom: 10px;
+            text-align: justify;
+            color: $color-list-danhmuc;
+            ul {
+                padding-top: 5px;
+            }
+        }
+    }
+
+    ul.Icon {
+        margin: 0px 0px 10px 5px;
+        li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            list-style-type: none;
+            text-align: justify;
+            position: relative;
+            color: $color-list-danhmuc;
+			@include p-el(before,8px,8px){
+                 top: 6px;
+                 left: 3px;
+                 background-color:$bg-icons-list;
+                 @include transform(rotate(45deg));
+            }
+            ul {
+                padding-top: 5px;
+            }
+
+            ul.LowerAlpha li {
+                list-style-type: lower-alpha;
+                margin-bottom: 10px;
+                background: none;
+                padding-left: 0px;
+            }
+        }
+    }
+
+    ul.Dash {
+        margin: 0px 0px 10px 5px;
+        li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            list-style-type: none;
+            text-align: justify;
+            position: relative;
+            color: $color-list-danhmuc;
+			@include p-el(before,8px,8px){
+                 top: 0px;
+                 left: 3px;
+                content:"-";
+            }
+            ul {
+                padding-top: 5px;
+            }
+        }
+    }
+
+    ul.Disc {
+        margin: 0px 0px 10px 5px;
+        li {
+            list-style-type: none;
+            margin: 0 0 10px 0;
+            padding: 0 0 0 20px;
+            text-align: justify;
+            position: relative;
+            ul {
+                padding-top: 5px;
+            }
+        }
+    }
+
+}

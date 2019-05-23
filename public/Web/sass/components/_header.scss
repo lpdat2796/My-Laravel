@@ -1,0 +1,44 @@
+.c-header{
+	height:542px;
+}
+.menu-top{
+	text-align:center;
+	ul{
+		@include  inline-block();
+		li{
+			float: left;
+			position: relative;
+			a{
+				@include  hide-text();
+				// &.icons-logo{
+				// 	position: absolute;
+				// 	width:131px;
+				// 	height: 128px;
+				// }
+
+			}
+			&.active{
+				a.icons-home{@include  icons-sprite(home_hover)}
+				a.icons-tintuc{@include  icons-sprite(tintuc_hover)}
+				a.icons-sukien{@include  icons-sprite(sukien_hover)}
+				a.icons-huongdan{@include  icons-sprite(huongdan_hover)}
+				a.icons-fanpage{@include  icons-sprite(fanpage_hover)}
+				a.icons-giftcode{@include  icons-sprite(giftcode_hover)}
+			}
+			&.icons-logo{
+				width:190px;
+				height: 128px;
+				a{
+					position: absolute;
+				    width: 240px;
+				    height: 128px;
+				    top: 5px;
+				    left: -20px;
+				    z-index: 100;
+				}
+			}
+			
+		}
+	}
+	
+}

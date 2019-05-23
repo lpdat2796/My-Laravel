@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="107px" height="43px" viewBox="0 0 107 43" enable-background="new 0 0 107 43" xml:space="preserve">
+<g>
+	<g>
+		<defs>
+			<path id="SVGID_1_" d="M106.995,11.413c-0.188-0.834-1.007-1.516-1.007-1.516s-0.719,0.517-3.769-3.786
+				c-3.05-4.303-5.021-5.613-5.972-6.014l0.024-0.005h-90C2.822,0.091,0,2.97,0,6.488v30.024c0,3.518,2.822,6.396,6.272,6.396
+				h94.457c3.449,0,6.272-2.878,6.272-6.396V11.427C106.999,11.421,106.996,11.419,106.995,11.413z"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_2_)">
+			<path fill="#FFFFFF" d="M100.728,42.909H6.272C2.822,42.909,0,40.03,0,36.512V6.488C0,2.97,2.822,0.091,6.272,0.091h94.457
+				c3.449,0,6.272,2.878,6.272,6.396v30.024C107,40.03,104.178,42.909,100.728,42.909z"/>
+			<path fill="#FFFFFF" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" d="M99.901,41.36H7.099
+				c-3.007,0-5.466-2.509-5.466-5.575V7.215c0-3.066,2.46-5.575,5.466-5.575h92.803c3.007,0,5.466,2.509,5.466,5.575v28.57
+				C105.368,38.851,102.908,41.36,99.901,41.36z"/>
+			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="38.4896" y1="32.0762" x2="105.3677" y2="32.0762">
+				<stop  offset="0" style="stop-color:#DA521F"/>
+				<stop  offset="1" style="stop-color:#F26F21"/>
+			</linearGradient>
+			<path fill="url(#SVGID_3_)" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" d="M99.901,41.36
+				c3.007,0,5.466-2.509,5.466-5.575V22.792L38.49,41.36H99.901z"/>
+			<path fill="#C1B49A" d="M61.802,2.851H7.666c-2.584,0-4.699,2.157-4.699,4.792v12.037L61.802,2.851z"/>
+		</g>
+	</g>
+	<text transform="matrix(0.9805 0 0 1 81.0459 38.6709)" fill="#FFFFFF" font-family="'MyriadPro-Bold'" font-size="9.6426">CMN</text>
+	<text transform="matrix(0.9498 -0.2532 0.2483 0.9687 28.9226 41.3512)" font-family="'MyriadPro-Bold'" font-size="39.9713">18+</text>
+	<text transform="matrix(0.9805 0 0 1 5.7178 9.5366)"><tspan x="0" y="0" fill="#231F20" font-family="'VNF-Dax'" font-size="6.5863">Game dành</tspan><tspan x="0" y="5.812" fill="#231F20" font-family="'VNF-Dax'" font-size="6.5863">cho</tspan></text>
+	<g>
+		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="92.3085" y1="13.0497" x2="101.1052" y2="4.253">
+			<stop  offset="0.543" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#2B2B2B"/>
+		</linearGradient>
+		<path fill="url(#SVGID_4_)" d="M106.997,24.267l-0.002-12.854c-0.335-1.438-3.458-2.849-5.668-6.225
+			c-3.029-4.627-5.08-5.091-5.08-5.091H79.356C85.645,5.79,100.193,16.651,106.997,24.267z"/>
+		
+			<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="99.1234" y1="780.0168" x2="102.9051" y2="783.5433" gradientTransform="matrix(1 0 0 -1 0 788.1011)">
+			<stop  offset="0" style="stop-color:#D6D7D9"/>
+			<stop  offset="0.46" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#C2C2C5"/>
+		</linearGradient>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_5_)" d="M96.247,0.097c0.72,0.198,1.082,0.822,1.092,1.61
+			c0.028,1.906,0.248,3.724,0.728,5.107c0.565,1.63,1.406,2.201,2.595,2.606c1.372,0.467,2.745,0.686,4.166,0.911
+			c0.406,0.064,2.209,0.401,2.167,1.083C107.224,10.276,99.274,0.787,96.247,0.097z"/>
+	</g>
+</g>
+</svg>

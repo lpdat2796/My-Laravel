@@ -1,0 +1,53 @@
+body {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#CaptchaCode, .txt-input {
+    width: 261px;
+    height: 25px;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+
+.txt-area {
+    width: 262px;
+    height: 80px;
+    padding: 5px;
+    font-family: Arial;
+}
+
+button {
+    margin: 10px 0;
+}
+
+.alert {
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.alert-success {
+    border: 1px solid #d9e4d2;
+    background: #def0d5;
+    color: #788f60;
+}
+
+.alert-error {
+    border: 1px solid #e4d8da;
+    background: #f3dddf;
+    color: #a94442;
+}
+
+.help-block {
+    display: block;
+    color: #a94442;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

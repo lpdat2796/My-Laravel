@@ -1,0 +1,9 @@
+$icons-spacing:5px;
+$icons-layout:smart;
+$icons-sprite-dimensions:true;
+@import "icons/*.png";
+@include all-icons-sprites;
+
+[class*="icons-"]{
+  @include inline-block();
+}

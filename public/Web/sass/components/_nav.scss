@@ -1,0 +1,38 @@
+// /*---- NAV ----*/
+.c-nav__list {
+    overflow: hidden;
+    li {
+        float: left;
+        width: 33.3%;
+        padding: 0 5px 10px;
+
+        a {
+            display: block;
+            min-height: 50px;
+            position: relative;
+            > img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 0;
+                &:last-child {
+                    opacity: 0;
+                }
+            }
+            &:hover > img {
+                &:last-child {
+                    opacity: 1;
+                }
+                :first-child {
+                    opacity: 0;
+                }
+            }
+        }
+
+        &:first-child > a > img {
+            right: 0;
+            left: auto;
+        }
+    }
+
+}

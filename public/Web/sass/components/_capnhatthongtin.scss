@@ -1,0 +1,50 @@
+.capnhatthongtin{
+    margin:20px auto;
+    max-width: 560px;
+}
+.capnhatthongtin__h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    color:#ffffff;
+    font-weight: bold;
+
+}
+.capnhatthongtin__h5{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 14px;
+    color:#ffffff;
+    font-weight: bold;
+    @include mq-to(max-width,768px){
+        text-align: left;
+    }
+}
+.text-cmnd{
+    margin:5px 0;
+    p{
+        color:#ffffff;
+       &:last-child{
+          margin:0;
+       }
+    }
+}
+.label--capnhat{
+    color:#ffffff;
+    font-weight: normal;
+}
+.form-info-text{
+    @include border-radius(0px);
+    border:1px solid #888888;
+    &:hover,&:focus{
+        box-shadow: none;
+        border-color:inherit;
+    }
+}
+.capnhatthongtin__error--center{
+    background-color:#fbbc0d;
+    color:#ffffff;
+    max-width: 400px;
+    margin:0 auto;
+    padding: 10px;
+}

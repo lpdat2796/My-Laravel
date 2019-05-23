@@ -1,0 +1,19 @@
+@import 'compass';
+
+/* Settings:  contain of font, colors definitions,helpers .... */
+@import "settings/index";
+
+/* Tools: contain of mixins and functions,... */
+@import "tools/index";
+
+/* Generic: contain of reset and/or normalize styles,... */
+@import "generics/index";
+
+/* Vendors */
+@import "vendors/index";
+
+/* Components */
+@import "components/index";
+
+/* Trumps  */
+@import "trumps/index";

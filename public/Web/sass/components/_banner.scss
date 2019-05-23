@@ -1,0 +1,23 @@
+.owl-slide{
+	width:654px;
+	float:left;
+	position: absolute;
+	top: 0;
+	right: -6px;
+	.owl-dots{
+		text-align: right;
+		right: 30px;
+	}
+	.owl-dots .owl-dot span{
+		@include  icons-sprite(kimcuong);
+		background-color: transparent;
+	}
+	.owl-dots .owl-dot.active span{
+		@include  icons-sprite(kimcuong_hover);
+		background-color: transparent;
+	}
+	.owl-dots .owl-dot:hover span{
+		@include  icons-sprite(kimcuong_hover);
+		background-color: transparent;
+	}
+}

@@ -1,0 +1,18 @@
+body { // Must be lock line  @import "bootstrap/scaffolding" in _bootstrap.scss
+    font-family: $main-font-family;
+    color: $main-color !important;
+    background: $main-background-color;
+    font-size: $main-font-size !important;
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+a {
+    color: $main-link-color;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        color: $main-link-hover-color;
+        text-decoration: none !important;
+    }
+}

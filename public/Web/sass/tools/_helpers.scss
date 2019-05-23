@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+%srt {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* For pseudo-elements */
+
+%pseudos {
+  display: block;
+  content: ''; 
+  position: absolute;
+}
+/* Sử dụng cho Pagination */
+
+%att {
+    color: #972619;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+    height: 30px;
+    padding: 0px 10px;
+    margin-right: 10px;
+    border: solid 1px #972619;
+    background: #260d11;
+}
+

@@ -1,0 +1,72 @@
+/*---- Main Varibles ----*/
+
+$main-color: #778193;
+$main-link-color: #35c4ff;
+$main-link-hover-color: #50ffe0;
+$main-background-color: #010000 !default;
+$main-font-family: "HelveticaNeue",Arial;
+$main-font-size: 14px;
+
+/*---- Content CSS Varibles ----*/
+$content-link-color: #ffd973;
+$content-link-hover-color: #50ffe0 ;
+$content-link-anchor-color: #ffd973  ;
+$bg-icons-anchor-active : #50ffe0;
+$bg-icons-anchor :#50ffe0;
+$color-list-danhmuc :#778193;
+$bg-icons-list :#778193;
+$first-letter-color: #99bacb;
+$strong-1-color: #ffd973;
+$strong-2-color: #50ffe0;
+$strong-3-color: #ffd973;
+
+$h3-color: #50ffe0;
+$h4-color: #50ffe0;
+$h4-padding: 40px;
+$h5-color: #50ffe0;
+$h5-padding: 25px;
+
+// Variables for Table
+$table-head-background-color: #7488a3;
+$table-head-text-color: #eef9f9;
+$table-border-color: #1a222a;
+$table-background-row-1-color: #d2e2ec;
+$table-background-row-2-color: #ebf8ff;
+$table-text-color: #1a222a;
+$table-text-hover-color:lighten(#1a222a,10%);
+
+// Variables for Image
+$image-border-color: #000;
+$image-background-color: #fff;
+
+// Variables for Notice box
+$notice-legend-background-color: #fd4b36;
+$legend-border-color: #d40000;
+$notice-legend-color: #fff;
+$notice-background-color: #d3eaf9;
+$notice-border-color: #8db6ed;
+$notice-color: #1e2c19;
+$notice-link-color: #006cff;
+$notice-link-hover-color: #fd4b36;
+/*---- End Content CSS Varibles ----*/
+
+
+// Config grid-system-bootstrap -----*/
+$screen-xs:                  480px !default;
+$screen-sm:                  768px !default;
+$screen-md:                  992px !default;
+$screen-lg:                  1200px !default;
+$grid-columns:               12 !default;
+$grid-gutter-width:          10px !default;
+$container-tablet:           100%;
+$grid-float-breakpoint:      $screen-sm;
+$container-desktop:          (974px + $grid-gutter-width) !default;
+$container-large-desktop:    (974px + $grid-gutter-width) !default;
+
+$max-width-layout: 984px; /*---- 3 values: 1176px or 984px or 768px ----*/
+// $grid-gutter-width: 10px !default;
+
+// Config for Non Responsive Layout -----*/
+$is-responsive: false; // The columns must be used col-xs-*
+
+/*---- End Main Varibles ----*/

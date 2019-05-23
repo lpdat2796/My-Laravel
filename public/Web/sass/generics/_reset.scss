@@ -1,0 +1,55 @@
+html {
+  @include box-sizing(border-box); 
+  *,
+  *:before,
+  *:after {
+    @include box-sizing(inherit);
+  }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+	-o-transition: color 0.2s linear;
+	-moz-transition: color 0.2s linear;
+	-khtml-transition: color 0.2s linear;
+	-webkit-transition: color 0.2s linear;
+	-ms-transition: color 0.2s linear;
+	transition: color 0.2s linear;
+    &:hover,
+    &:focus {
+		text-decoration: none;
+        outline: none;
+    }
+}
+button {
+	&:active,
+	&:focus	{
+		outline: none;
+		border: none;
+	}
+}
+
+iframe {
+    max-width: 100% !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+   li {
+     list-style: none;
+   }
+}
+figure {
+	width: 100% !important;
+}
+[class*="icons"] {
+  @include inline-block();
+}

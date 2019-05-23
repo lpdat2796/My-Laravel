@@ -1,0 +1,10 @@
+.wapper {
+    background: url(../images/bg-wrapper.jpg) no-repeat center top;
+    min-height: 2000px;
+}
+.bg-top {
+    background: url(../images/bg-top.jpg) no-repeat center top;
+}
+.snowfall-flakes {
+	border-radius: 10px;
+}

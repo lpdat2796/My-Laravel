@@ -1,0 +1,43 @@
+// Responsive-to-with-Bootstrap-3
+@mixin mq($media){
+  @if $media == screen-xxs{
+    @media only screen and (max-width:$screen-xxs){
+      // default 320
+      @content
+    }
+  }@else if $media == screen-xs{
+    @media only screen and (max-width:$screen-xs){
+      // default 480
+      @content
+    }
+  }@else if $media == screen-sm {
+    @media only screen and (max-width:$screen-sm){
+      // default 768
+      @content
+    }
+  }@else if $media == screen-md {
+    @media only screen and (max-width:$screen-md){
+       // default 992
+      @content
+    }
+  }@else if $media == screen-lg {
+    @media only screen and (min-width:$screen-lg){
+       // default 1200
+      @content
+    }
+  }
+}
+
+
+// Responsive with conditions
+@mixin mq-min-max($min,$max){
+  @media (min-width: $min) and (max-width: $max) {
+    @content
+  }
+}
+
+@mixin mq-to($var,$query){
+  @media only screen and ($var: $query){
+    @content
+  }
+}
